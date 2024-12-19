@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==75.6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "some-hyphens"
+version = "0.1.0"
+readme = "README.md"
+description = "Some hyphens"
+
+[tool.setuptools.packages.find]
+include = ["some_hyphens"]
+
+[tool.setuptools.package-data]
+some-hyphens = ["README.md"]
+
